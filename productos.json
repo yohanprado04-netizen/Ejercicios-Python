@@ -1,0 +1,9 @@
+[
+    {
+        "codigo_producto": "01",
+        "categoria_producto": "2f",
+        "nombre_producto": "Mango",
+        "cantidad": -10,
+        "precio": 3000.0
+    }
+]
