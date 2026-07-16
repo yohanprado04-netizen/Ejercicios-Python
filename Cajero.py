@@ -10,11 +10,11 @@ def menu():
     print("3. Salir.")
 
 def consulta_saldo():
-    print(f"Su saldo es: ${Saldo}")
+    print(f"Su saldo es: ${Saldo:,.2f}")
 
 def retiro_dinero():
     global Saldo
-    retiro = int(input(f"Cuanto desea retirar su saldo es de: ${Saldo}: "))
+    retiro = int(input(f"Cuanto desea retirar su saldo es de: ${Saldo:,.2f}: "))
     if retiro > Saldo:
         print("Fondos insuficientes")
     elif retiro <= 0:

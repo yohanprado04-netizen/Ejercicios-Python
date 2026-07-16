@@ -1,0 +1,10 @@
+{
+  "juan123": {
+    "contrasena": "1234",
+    "saldo": 1000000
+  },
+  "maria456": {
+    "contrasena": "4321",
+    "saldo": 2500000
+  }
+}

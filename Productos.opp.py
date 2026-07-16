@@ -29,10 +29,10 @@ class Producto:
         subtotal, total_pagar = self.calcular_totales()
         print("Nombre del producto: ",self.producto)
         print("Cantidad del producto: ",self.cantidad)
-        print("Precio del producto: ",self.precio)
-        print("Subtotal del producto: ",subtotal)
+        print(f"Precio del producto: {self.precio:,.2f}")
+        print(f"Subtotal del producto: {subtotal:,.2f}")
         print("Tipo de usuario: ",self.usuario.capitalize())
-        print("Total a pagar con descuento: ",total_pagar)
+        print(f"Total a pagar con descuento: {total_pagar:,.2f}")
 
 
 nombre_producto = input("Ingrese el nombre del producto: ")
