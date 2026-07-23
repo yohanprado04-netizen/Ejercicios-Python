@@ -33,15 +33,16 @@ class Pago_Tarjeta(Metodo_Pago):
     def procesar_pago(self, monto):
         super().procesar_pago(monto)
         while True:
-                tarjeta  = input("Ingrese numero de tarjeta: ")
-                pin = int(input("Ingrese pin de la tarjeta: "))
-                if len(pin) > 4:
-                    print("Pin incorrecto.")
-                cvc = int(input("Ingrese cvc de la tarjeta: "))
-                if len(cvc) > 3:
-                    print("cvc incorrecto.")
+            tarjeta  = input("Ingrese numero de tarjeta: ")
+            pin = input("Ingrese pin de la tarjeta: ")
+            cvc = input("Ingrese cvc de la tarjeta: ")
+            if len(pin) > 4:
+                print("Pin incorrecto.")
+            elif len(cvc) > 3:
+                print("cvc incorrecto.")
+            else:
                 print(f"Procesando pago en {self.metodo_pago} por un monto de ${self.monto:,.2f}")
-                break
+            break
 
 elegir_pago = input("¿Por donde desea hacer el pago? (Transferencia/Efectivo/Tarjeta): ").lower()
 monto_a_pagar = float(input("Ingrese el valor a pagar: "))
